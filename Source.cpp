@@ -175,13 +175,12 @@ int main() {
 		cout << "It took " << seconds << " seconds to complete the quiz." << endl << endl;
 		cout << "Press enter to continue...";
 		cin.get();
+		
+		//Outputs the tables back to file.
+		outputFile(trachtenbergQuizes);
 
 		//Check to see if the user wants to take another quiz.
 		if (endQuizes()) break;
 	}	
-
-	//Outputs the tables back to file.
-	outputFile(trachtenbergQuizes);
-
 	return 0;
 }
